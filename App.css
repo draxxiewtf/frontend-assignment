@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'SF Pro Text', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #000000;
+}
+
+html {
+  background-color: #000000;
+}
+
+.app-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+
+/* Mobile phone frame styling */
+.frame-mobile {
+  width: 578px;
+  height: 800px;
+  background-color: white;
+  border-radius: 0px;
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.15);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Content area inside the mobile frame */
+.frame-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 120px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.frame-content::-webkit-scrollbar {
+  display: none;
+}
+
+/* Reset any previous styles */
+* {
+  box-sizing: border-box;
+}

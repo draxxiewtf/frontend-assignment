@@ -1,0 +1,17 @@
+{
+  "name": "frontend-assignment",
+  "version": "1.0.0",
+  "description": "Frontend component showcase",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx parcel index.html --open",
+    "build": "npx parcel build index.html"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}

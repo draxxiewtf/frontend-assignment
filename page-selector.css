@@ -1,0 +1,149 @@
+.selector-card {
+  width: 360px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+.selector-content {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.header-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  height: 52px; /* Ensure consistent height */
+}
+
+.item-text {
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  line-height: 1.1;
+}
+
+.top-divider {
+  background-color: #e0e0e0;
+  height: 1px;
+  margin: 0;
+  width: 100%;
+}
+
+.bottom-divider {
+  background-color: #e0e0e0;
+  height: 1px;
+  margin: 0;
+  width: 100%;
+  margin-top: 4px; /* Add slight spacing above bottom divider */
+}
+
+.pages-list {
+  height: 184px; /* Adjusted to show exactly 4 items with proper spacing */
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 4px 0;
+  clip-path: inset(0 0 0 0); /* Ensures clean cut-off */
+}
+
+.pages-list::-webkit-scrollbar {
+  display: none;
+}
+
+.page-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  height: 46px; /* Increased height for better spacing */
+  box-sizing: border-box;
+}
+
+/* Custom Checkbox styling */
+.custom-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  background-color: white;
+  transition: all 0.2s ease;
+}
+
+/* Unchecked hover state */
+.custom-checkbox:not(:checked):hover {
+  background-color: #f8f8f8;
+  border-color: #aaa;
+}
+
+/* Unchecked hover state with gray tick */
+.custom-checkbox:not(:checked):hover::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  width: 3px;
+  height: 8px;
+  border: solid #ccc;
+  border-width: 0 1.5px 1.5px 0;
+  transform: rotate(45deg);
+  opacity: 0.5;
+}
+
+/* Checked state */
+.custom-checkbox:checked {
+  background-color: #4285f4;
+  border-color: #4285f4;
+  border-radius: 4px;
+}
+
+/* Checked hover state - lighter blue */
+.custom-checkbox:checked:hover {
+  background-color: #5b9aff;
+  border-color: #5b9aff;
+}
+
+/* Checkmark */
+.custom-checkbox:checked::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  width: 3px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 1.5px 1.5px 0;
+  transform: rotate(45deg);
+}
+
+/* Done button */
+.done-button {
+  width: 100%;
+  height: 40px;
+  background-color: #ffcc00;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  line-height: 1.1;
+  cursor: pointer;
+  margin-top: 16px;
+  transition: background-color 0.2s ease;
+}
+
+/* Lighter hover state for done button */
+.done-button:hover {
+  background-color: #ffda47;
+}
