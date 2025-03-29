@@ -2,6 +2,10 @@
 
 A React-based implementation of a mobile frame containing a page selector component. The design features a clean, modern UI with interactive elements and smooth animations.
 
+## Live Demo
+
+View the live implementation: [Mobile Frame Page Selector](https://frontend-assignment-ellty.netlify.app/)
+
 ## Features
 
 - Responsive mobile frame layout with centered positioning
@@ -54,5 +58,3 @@ npm start
 - Implemented custom checkbox styling with interactive states (hover, checked)
 - Designed the component to closely match the provided reference image
 - Added subtle animations for improved user experience
-
-
