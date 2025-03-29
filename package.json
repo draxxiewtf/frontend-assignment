@@ -3,15 +3,19 @@
   "version": "1.0.0",
   "description": "Frontend component showcase",
   "main": "index.js",
+  "homepage": "https://draxxiewtf.github.io/frontend-assignment",
   "scripts": {
     "start": "npx parcel index.html --open",
-    "build": "npx parcel build index.html"
+    "build": "npx parcel build index.html --public-url ./",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "parcel-bundler": "^1.12.5"
   }
 }
