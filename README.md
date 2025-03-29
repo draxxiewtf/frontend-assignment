@@ -55,6 +55,4 @@ npm start
 - Designed the component to closely match the provided reference image
 - Added subtle animations for improved user experience
 
-## License
 
-MIT
