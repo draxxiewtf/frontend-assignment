@@ -24,7 +24,7 @@ View the live implementation: [Mobile Frame Page Selector](https://frontend-assi
 
 1. Clone the repository:
 ```
-git clone https://github.com/yourusername/mobile-frame-page-selector.git
+git clone https://github.com/draxxiewtf/frontend-assignment.git
 ```
 
 2. Navigate to the project directory:
